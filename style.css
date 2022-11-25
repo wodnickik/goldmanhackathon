@@ -1,8 +1,9 @@
 body {
     padding: 0;
+    margin: 0;
 }
 
-.title_bar {
+#title_bar {
     background-color: #151945;
     margin-left: 0;
     margin-right: 0;
@@ -10,7 +11,7 @@ body {
     width: 100%;
 }
 
-.title_bar_content {
+#title_bar_content {
     margin: auto;
     width: 30%;
     color: white;
