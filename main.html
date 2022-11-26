@@ -14,7 +14,52 @@
         <div id="jump_to_offers">
             <a href="https://www.google.com"><button>Jump strait to unfiltered job offers</button></a>
         </div>
-
     </div>
+
+    <div id="quiz">
+        <h2>Match your experience to open roles</h2>
+        <form>
+            <h3>Programming languages</h3>
+            <table>
+                <tr>
+                    <td><label for="python">Python</label></td>
+                    <td><input type="checkbox" id="python" name="python"></td>
+                </tr>
+                <tr>
+                    <td><label for="java">Java</label></td>
+                    <td><input type="checkbox" id="java" name="java"></td>
+                </tr>
+                <tr>
+                    <td><label for="c">C</label></td>
+                    <td><input type="checkbox" id="c" name="c"></td>
+                </tr>
+            </table>
+
+            <h3>Foreign languages</h3>
+            <input type="text" name="language" id="language" placeholder="eg. English">
+            <input type="button" id="add_button" value="Add">
+            <ul id="languages_list"></ul>
+
+            <h3>Education</h3>
+            <table>
+                <tr>
+                    <td><label for="uni_name">University name</label></td>
+                    <td><input type="text" id="uni_name" name="uni_name"></td>
+                </tr>
+                <tr>
+                    <td><label for="field_of_study">Field of study</label></td>
+                    <td><input type="text" id="field_of_study" name="field_of_study"></td>
+                </tr>
+                <tr>
+                    <td><label for="grad_date">Graduation date</label></td>
+                    <td><input type="month" id="grad_date" name="grad_date"></td>
+                </tr>
+            </table>
+
+            <input type="button" id="submit" value="Submit">
+        </form>
+    </div>
+<script src="languages.js"></script>
+<script src="submit.js"></script>
 </body>
 </html>
