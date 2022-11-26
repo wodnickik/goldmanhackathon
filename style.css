@@ -1,5 +1,7 @@
 :root {
     --bg-navy-blue: #151945;
+    --lightblue: #569cff;
+    --blue: #286ac4;
 }
 
 body {
@@ -26,10 +28,21 @@ body {
     font-weight: lighter;
 }
 
-/*.custom-select {*/
-/*    margin: auto;*/
-/*    width: 30%;*/
-/*    color: white;*/
-/*    font-family: Arial, Helvetica, sans-serif;*/
-/*    font-weight: lighter;*/
-/*}*/
+#jump_to_offers {
+    width: 30%;
+    margin: auto;
+}
+
+button {
+    background-color: var(--lightblue);
+    border: none;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition-duration: 0.4s;
+}
+
+button:hover {
+    color: white;
+}
