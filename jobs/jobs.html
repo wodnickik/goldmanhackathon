@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <title>Careers</title>
     <link rel="stylesheet" href="jobs_style.css">
+    <!-- <script src="../onload.js" defer></script> -->
 </head>
 <body onload="loaded();">
+    <script>console.log(sessionStorage.getItem("x"));</script>
     <div class="main_box">
         <img class="logo" src="../img/logo.svg" alt="GS logo">
 
@@ -109,14 +111,23 @@
 
 <script>
     function loaded() {
-        document.getElementById("box1").checked = true;
-        document.getElementById("box3").checked = true;
-        var elem = document.getElementById("job2");
-        elem.style.height = 0 + "px";
-        elem.style.visibility = "hidden";
-        var elem = document.getElementById("job4");
-        elem.style.height = 0 + "px";
-        elem.style.visibility = "hidden";
+        console.log(sessionStorage.getItem("x"));
+        if(sessionStorage.getItem("x") === "nie") {
+            document.getElementById("box1").checked = true;
+            document.getElementById("box2").checked = true;
+            document.getElementById("box3").checked = true;
+            document.getElementById("box4").checked = true;
+        }
+        else{
+            document.getElementById("box1").checked = true;
+            document.getElementById("box3").checked = true;
+            let elem = document.getElementById("job2");
+            elem.style.height = 0 + "px";
+            elem.style.visibility = "hidden";
+            let elem2 = document.getElementById("job4");
+            elem2.style.height = 0 + "px";
+            elem2.style.visibility = "hidden";
+        }
     }
 
 </script>
