@@ -4,12 +4,21 @@
     <meta charset="UTF-8">
     <title>Careers</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="select_style.css">
 </head>
 <body>
     <div id="title_bar">
-        <div id="title_bar_content">
-            <h1>Goldman Sachs</h1>
-            <h2>Careers</h2>
+        <div id="title_bar_headers">
+            <h1 class="title_text">Goldman Sachs</h1>
+            <h2 class="title_text">Careers</h2>
+            <label for="region" class="title_text">Choose job offers by region:</label>
+        </div>
+        <div class="custom-select">
+            <select name="region" id="region">
+                <option value="europe">Europe</option>
+                <option value="northamerica">North America</option>
+                <option value="asia">Asia</option>
+            </select>
         </div>
     </div>
 </body>

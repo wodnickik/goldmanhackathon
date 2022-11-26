@@ -1,18 +1,35 @@
+:root {
+    --bg-navy-blue: #151945;
+}
+
 body {
     padding: 0;
     margin: 0;
 }
 
 #title_bar {
-    background-color: #151945;
+    background-color: var(--bg-navy-blue);
     margin-left: 0;
     margin-right: 0;
     margin-top: 50px;
     width: 100%;
 }
 
-#title_bar_content {
-    margin: auto;
+#title_bar_headers {
+    margin: 15px auto;
     width: 30%;
     color: white;
 }
+
+.title_text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+}
+
+/*.custom-select {*/
+/*    margin: auto;*/
+/*    width: 30%;*/
+/*    color: white;*/
+/*    font-family: Arial, Helvetica, sans-serif;*/
+/*    font-weight: lighter;*/
+/*}*/
