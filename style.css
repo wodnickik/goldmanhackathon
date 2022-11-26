@@ -34,9 +34,9 @@ body {
 }
 
 button {
-    background-color: var(--lightblue);
+    background-color: var(--bg-navy-blue);
     border: none;
-    color: black;
+    color: white;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -44,5 +44,5 @@ button {
 }
 
 button:hover {
-    color: white;
+    color: lightgray;
 }
