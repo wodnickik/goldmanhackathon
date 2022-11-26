@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Careers</title>
+    <link rel="stylesheet" href="jobs_style.css">
+</head>
+<body onload="loaded();">
+    <div class="main_box">
+        <img class="logo" src="../img/logo.svg" alt="GS logo">
+
+        <div class="title_bar">
+            <h1 class="page_title">Job offers</h1>
+
+            <div class="select">
+                <select>
+                <option value="1">United States of America</option>
+                <option value="2">Poland</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="filter_box">
+            <button type="button" class="collapsible2">
+                <div class="button_content2">
+                    <p class="button_text2">Select job category</p>
+                </div>    
+            </button>
+            <div class="content2">
+                <div id="options">
+                    <input type="checkbox" id="box1" name="option1" value="Option1" pattern="options">
+                    <label for="box1">Option1</label><br>
+
+                    <input type="checkbox" id="box2" name="option2" value="Option2">
+                    <label for="box2">Option2</label><br>
+                    
+                    <input type="checkbox" id="box3" name="option3" value="Option3">
+                    <label for="box3">Option3</label><br>
+                    
+                    <input type="checkbox" id="box4" name="option4" value="Option4">
+                    <label for="box4">Option4</label><br>
+                    
+                    <button onclick="changeOutput()">Submit</button>
+                </div>    
+            </div>
+        </div>
+
+
+        <div class="center_bar">
+            <div class="gray_bar">
+                <h5 class="gray_bar_text">Click on the category to expand and learn more</h5>
+            </div>
+
+
+            <div id="job1">
+                <button type="button" class="collapsible">
+                    <div class="button_content">
+                        <img class="skill_img" src="../img/Impact.svg">
+                        <p class="button_text">Business Finance, Budgeting, and Forecasting</p>
+                    </div>    
+                </button>
+                <div class="content">
+                    <p class="job_describtion">Teams partner with business leaders to provide advice on the financial and regulatory considerations when executing business with our clients. </p>
+                </div>
+            </div>
+
+            <div id="job2">
+                <button type="button" class="collapsible">
+                    <div class="button_content">
+                        <img class="skill_img" src="../img/data-analytics.png">
+                        <p class="button_text">Data Analytics and Business Intelligence</p>
+                    </div>    
+                </button>
+                <div class="content">
+                    <p class="job_describtion">Teams build, control, maintain, and deliver large data sets in the most effective and efficient way.</p>
+                </div>
+            </div>
+
+            <div id="job3" style="height: auto;">
+                <button type="button" class="collapsible">
+                    <div class="button_content">
+                        <img class="skill_img" src="../img/Opportunity.svg">
+                        <p class="button_text">Financial Accounting/Financial Planning</p>
+                    </div>    
+                </button>
+                <div class="content">
+                    <p class="job_describtion">Teams collaborate with groups across the firm to develop and manage the firms  forward looking strategic and financial plans, including profit, loss, and financial resources.</p>
+                </div>
+            </div>
+
+            <div id="job4">
+                <button type="button" class="collapsible">
+                    <div class="button_content">
+                        <img class="skill_img" src="../img/front-end.svg">
+                        <p class="button_text">Front End Engineer (UI)</p>
+                    </div>    
+                </button>
+                <div class="content">
+                    <p class="job_describtion">Teams use analytical ability and decision-making skills to arrive at creative and client-oriented solutions.</p>
+                </div>
+            </div>
+            <div id="job5">
+
+            </div>
+
+        </div>
+
+    </div>
+
+<script>
+    function loaded() {
+        document.getElementById("box1").checked = true;
+        document.getElementById("box3").checked = true;
+        var elem = document.getElementById("job2");
+        elem.style.height = 0 + "px";
+        elem.style.visibility = "hidden";
+        var elem = document.getElementById("job4");
+        elem.style.height = 0 + "px";
+        elem.style.visibility = "hidden";
+    }
+
+</script>
+
+<script src="jobs_script2.js"></script>
+<script src="jobs_script.js"></script>    
+</body>
+</html>
