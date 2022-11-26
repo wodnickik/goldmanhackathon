@@ -3,6 +3,7 @@
     --lightblue: #569cff;
     --blue: #286ac4;
     --lightgray: #f0f0f0;
+    --lightgray_border: #dddddd;
   }
 
 body {
@@ -107,11 +108,10 @@ select::-ms-expand {
     background-color: var(--lightgray);
     position: relative;
     text-align: center;
-    /* height: 46px; */
-    height: fit-content;
-    width: 100%;
     margin-top: 100px;
     padding: 1px;
+    border-bottom: var(--lightgray_border) solid;
+    border-width: 1px;
 }
 
 .gray_bar_text {
@@ -119,5 +119,60 @@ select::-ms-expand {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: lighter;
     color: black;
+}
+
+.collapsible {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+
+.active, .collapsible:hover {
+    background-color: var(--lightgray);
+}
+
+.collapsible:after {
+    content: '\002B';
+    color: var(--lightblue);
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2212";
+}
+
+.content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: var(--lightgray);
+    border-bottom: var(--lightgray_border) solid;
+    border-width: 1px;
+}
+
+.skill_img {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+}
+
+.button_content {
+    height: fit-content;
+}
+
+.button_text {
+    float: left;
+    vertical-align: middle;
+    font-size: 16px;
 }
 
