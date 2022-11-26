@@ -6,11 +6,62 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="title_bar">
-        <div class="title_bar_content">
-            <h1>Goldman Sachs</h1>
-            <h2>Careers</h2>
+    <div id="title_bar">
+        <div id="title_bar_headers">
+            <h1 class="title_text">Goldman Sachs</h1>
+            <h2 class="title_text">Careers</h2>
+        </div>
+        <div id="jump_to_offers">
+            <a href="./tmp.html"><button>Jump strait to unfiltered job offers</button></a>
         </div>
     </div>
+
+    <div id="quiz">
+        <h2>Match your experience to open roles</h2>
+        <form>
+            <h3>Programming languages</h3>
+            <table>
+                <tr>
+                    <td><label for="python">Python</label></td>
+                    <td><input type="checkbox" id="python" name="python"></td>
+                </tr>
+                <tr>
+                    <td><label for="java">Java</label></td>
+                    <td><input type="checkbox" id="java" name="java"></td>
+                </tr>
+                <tr>
+                    <td><label for="c">C</label></td>
+                    <td><input type="checkbox" id="c" name="c"></td>
+                </tr>
+            </table>
+
+            <h3>Foreign languages</h3>
+            <input type="text" name="language" id="language" placeholder="eg. English">
+            <input type="button" id="add_button" value="Add">
+            <ul id="languages_list"></ul>
+
+            <h3>Education</h3>
+            <table>
+                <tr>
+                    <td><label for="uni_name">University name</label></td>
+                    <td><input type="text" id="uni_name" name="uni_name"></td>
+                </tr>
+                <tr>
+                    <td><label for="field_of_study">Field of study</label></td>
+                    <td><input type="text" id="field_of_study" name="field_of_study"></td>
+                </tr>
+                <tr>
+                    <td><label for="grad_date">Graduation date</label></td>
+                    <td><input type="month" id="grad_date" name="grad_date"></td>
+                </tr>
+            </table>
+
+            <div id="submit">
+                <a href="./tmp.html"><input type="button" value="Submit" onclick="save_form()"></a>
+            </div>
+        </form>
+    </div>
+<script src="languages.js"></script>
+<script src="save_form.js"></script>
 </body>
 </html>
